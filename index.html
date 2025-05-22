@@ -2,47 +2,100 @@
 <html lang="ar" dir="rtl">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>موقعي التعليمي</title>
-  <script src="https://cdn.tailwindcss.com"></script>
-  <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;700&display=swap" rel="stylesheet" />
-  <style> body { font-family: "Cairo", sans-serif; } </style>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Fabrica - لتعليم البرمجة</title>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+  <link rel="icon" href="https://img.icons8.com/external-flat-icons-inmotus-design/67/null/external-code-education-flat-icons-inmotus-design.png" />
 </head>
-<body class="bg-blue-600 text-white min-h-screen flex flex-col">
-  <main class="max-w-4xl mx-auto px-6 py-16 flex-grow flex flex-col justify-center">
-    <h1 class="text-5xl font-extrabold mb-6 text-center">مرحباً بك في موقعي التعليمي</h1>
-    <p class="text-center text-lg mb-12">
-      هنا تجد مقالات وبرامج تعليمية تساعدك على تعلم البرمجة بسهولة وبشكل مبسط.
-    </p>
-    <div class="text-center">
-      <a href="articles.html" class="bg-white text-blue-600 font-bold py-3 px-8 rounded-full hover:bg-gray-100 transition">
-        تصفح جميع المقالات
-      </a>
+<body class="bg-gray-100 text-gray-800 font-sans">
+
+  <!-- Header -->
+  <header class="bg-purple-700 text-white py-6 shadow-md">
+    <div class="container mx-auto px-4 text-center">
+      <h1 class="text-3xl font-bold">منصة Fabrica لتعليم البرمجة</h1>
+      <p class="mt-2 text-lg">ابدأ رحلتك من الصفر نحو الاحتراف مع دعم مباشر</p>
     </div>
-  </main>
-  <footer class="text-center py-6 text-blue-200 bg-blue-700">
-    &copy; 2025 موقعي التعليمي - جميع الحقوق محفوظة
+  </header>
+
+  <!-- رؤية المشروع -->
+  <section class="container mx-auto px-4 py-10">
+    <h2 class="text-2xl font-bold text-purple-700 mb-4">الرؤية العامة للمشروع</h2>
+    <p class="mb-6 leading-relaxed">
+      فبريكا هي منصة تعليمية مخصصة للمبتدئين في مجال البرمجة، تهدف لتوفير محتوى بسيط، جذاب، ومناسب لجميع الفئات، من خلال كورسات تعليمية منظمة وتواصل مباشر عبر واتساب لتقديم الدعم والمتابعة الشخصية.
+    </p>
+
+    <h3 class="text-xl font-semibold text-purple-600 mb-2">أهداف المشروع</h3>
+    <ul class="list-disc pr-6 space-y-2">
+      <li>جذب المهتمين بمجال التكنولوجيا والبرمجة بشكل مبسط وعملي.</li>
+      <li>تحويل المتعلمين من مبتدئين إلى قادرين على بناء مشاريع حقيقية.</li>
+      <li>توفير كورسات مدفوعة بأسعار مناسبة ومحتوى عالي الجودة.</li>
+      <li>تحقيق أرباح مستقرة من خلال الاشتراكات والإعلانات المدروسة.</li>
+    </ul>
+  </section>
+
+  <!-- الكورسات -->
+  <section class="bg-white py-10">
+    <div class="container mx-auto px-4">
+      <h2 class="text-2xl font-bold text-purple-700 mb-8 text-center">باقات الكورسات</h2>
+      <div class="grid md:grid-cols-2 gap-6">
+        <!-- كورس تمهيدي -->
+        <div class="bg-purple-100 p-6 rounded-xl shadow">
+          <h3 class="text-xl font-bold text-purple-700">الكورس التمهيدي (مجاني)</h3>
+          <p class="mt-2 mb-4">مقدمة عن التكنولوجيا والبرمجة للمبتدئين.</p>
+          <ul class="list-disc pr-5 mb-4 text-sm">
+            <li>مقدمة عن التكنولوجيا الحديثة</li>
+            <li>ما هي البرمجة؟ ولماذا مهمة؟</li>
+            <li>تطبيقات البرمجة في الحياة اليومية</li>
+          </ul>
+          <a href="https://wa.me/201066047545" target="_blank" class="bg-purple-700 text-white px-4 py-2 rounded hover:bg-purple-800">راسلنا على واتساب</a>
+        </div>
+
+        <!-- أساسيات البرمجة -->
+        <div class="bg-purple-100 p-6 rounded-xl shadow">
+          <h3 class="text-xl font-bold text-purple-700">كورس الأساسيات - 120 جنيه</h3>
+          <p class="mt-2 mb-4">ابدأ من الصفر مع مفاهيم البرمجة الأساسية.</p>
+          <ul class="list-disc pr-5 mb-4 text-sm">
+            <li>مقدمة في لغات البرمجة</li>
+            <li>الجمل الشرطية والحلقات والمتغيرات</li>
+            <li>تطبيق عملي بلغة Python أو JavaScript</li>
+          </ul>
+          <a href="https://wa.me/201066047545" target="_blank" class="bg-purple-700 text-white px-4 py-2 rounded hover:bg-purple-800">اشترك الآن - فبريكا</a>
+        </div>
+
+        <!-- بناء المشاريع -->
+        <div class="bg-purple-100 p-6 rounded-xl shadow">
+          <h3 class="text-xl font-bold text-purple-700">كورس بناء المشاريع - 220 جنيه</h3>
+          <p class="mt-2 mb-4">تعلم كيفية تحويل الأكواد إلى موقع أو تطبيق.</p>
+          <ul class="list-disc pr-5 mb-4 text-sm">
+            <li>تصميم واجهات وربطها بالبرمجة</li>
+            <li>نشر المواقع باستخدام GitHub وNetlify</li>
+            <li>شرح عملي لنشر تطبيق على Google Play</li>
+          </ul>
+          <a href="https://wa.me/201066047545" target="_blank" class="bg-purple-700 text-white px-4 py-2 rounded hover:bg-purple-800">اشترك الآن - فبريكا</a>
+        </div>
+
+        <!-- كورس الاحتراف -->
+        <div class="bg-purple-100 p-6 rounded-xl shadow">
+          <h3 class="text-xl font-bold text-purple-700">كورس الاحتراف - 350 جنيه</h3>
+          <p class="mt-2 mb-4">حوّل نفسك لمبرمج محترف ينشئ مشروعه الخاص.</p>
+          <ul class="list-disc pr-5 mb-4 text-sm">
+            <li>بناء هوية رقمية وPortfolio</li>
+            <li>نشر مشروعك على الإنترنت</li>
+            <li>طرق الربح من الإنترنت والعمل الحر</li>
+          </ul>
+          <a href="https://wa.me/201066047545" target="_blank" class="bg-purple-700 text-white px-4 py-2 rounded hover:bg-purple-800">ابدأ مشروعك الآن</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-gray-200 py-6 mt-10 text-center text-sm">
+    <p>© 2025 Fabrica. جميع الحقوق محفوظة.</p>
+    <div class="mt-2">
+      <a href="https://wa.me/201066047545" target="_blank" class="text-purple-600 hover:underline">تواصل معنا عبر واتساب</a>
+    </div>
   </footer>
+
 </body>
 </html>
-
-<!DOCTYPE html>
-<html lang="ar" dir="rtl">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>فبريكا - تعليم البرمجة</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
-    <header>
-        <h1>فبريكا</h1>
-        <p>منصة تعليم البرمجة للمبتدئين بقيادة فبريكا</p>
-        <a href="https://wa.me/201066047545" class="cta-button">تواصل مع فبريكا</a>
-    </header>
-    
-            <h2>روابط هامة</h2>
-            <ul>
-                <li><a href="https://instagram.com/frjbdllh25" target="_blank">Instagram</a></li>
-                <li><a href="https://tiktok.com/@fr.fdev" target="_blank">TikTok</a></li>
-                <li><a href="https://youtube.com/channel/UCePYwZ7Xw0n8ablISvZ6xGg" target="_blank">YouTube</a></li>

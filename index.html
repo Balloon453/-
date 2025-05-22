@@ -3,28 +3,28 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Fabrica - لتعليم البرمجة</title>
+  <title>منصة Fabrica لتعليم البرمجة</title>
   <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
-  <link rel="icon" href="https://img.icons8.com/external-flat-icons-inmotus-design/67/null/external-code-education-flat-icons-inmotus-design.png" />
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+  <script src="https://kit.fontawesome.com/a2d9a5163c.js" crossorigin="anonymous"></script>
+  <style>
+    body {
+      font-family: 'Cairo', sans-serif;
+    }
+  </style>
 </head>
-<body class="bg-gray-100 text-gray-800 font-sans">
+<body class="bg-gray-50 text-gray-800">
 
-  <!-- Header -->
-  <header class="bg-purple-700 text-white py-6 shadow-md">
-    <div class="container mx-auto px-4 text-center">
-      <h1 class="text-3xl font-bold">منصة Fabrica لتعليم البرمجة</h1>
-      <p class="mt-2 text-lg">ابدأ رحلتك من الصفر نحو الاحتراف مع دعم مباشر</p>
-    </div>
+  <!-- Hero Section -->
+  <header class="bg-purple-600 text-white py-10 text-center" data-aos="fade-down">
+    <h1 class="text-4xl font-bold mb-3">منصة Fabrica</h1>
+    <p class="text-lg">ابدأ رحلتك في تعلم البرمجة بخطوات بسيطة وواضحة</p>
+    <a href="https://wa.me/201066047545" target="_blank" class="mt-5 inline-block bg-white text-purple-600 px-6 py-2 rounded-lg font-bold hover:bg-gray-100 transition">تواصل معنا عبر واتساب</a>
   </header>
 
-  <!-- رؤية المشروع -->
-  <section class="container mx-auto px-4 py-10">
-    <h2 class="text-2xl font-bold text-purple-700 mb-4">الرؤية العامة للمشروع</h2>
-    <p class="mb-6 leading-relaxed">
-      فبريكا هي منصة تعليمية مخصصة للمبتدئين في مجال البرمجة، تهدف لتوفير محتوى بسيط، جذاب، ومناسب لجميع الفئات، من خلال كورسات تعليمية منظمة وتواصل مباشر عبر واتساب لتقديم الدعم والمتابعة الشخصية.
-    </p>
-
-    <h3 class="text-xl font-semibold text-purple-600 mb-2">أهداف المشروع</h3>
+  <!-- أهداف المشروع -->
+  <section class="py-10 px-6 max-w-4xl mx-auto" data-aos="fade-up">
+    <h2 class="text-2xl font-bold text-purple-700 mb-4">أهداف المشروع</h2>
     <ul class="list-disc pr-6 space-y-2">
       <li>جذب المهتمين بمجال التكنولوجيا والبرمجة بشكل مبسط وعملي.</li>
       <li>تحويل المتعلمين من مبتدئين إلى قادرين على بناء مشاريع حقيقية.</li>
@@ -33,69 +33,56 @@
     </ul>
   </section>
 
-  <!-- الكورسات -->
-  <section class="bg-white py-10">
-    <div class="container mx-auto px-4">
-      <h2 class="text-2xl font-bold text-purple-700 mb-8 text-center">باقات الكورسات</h2>
-      <div class="grid md:grid-cols-2 gap-6">
-        <!-- كورس تمهيدي -->
-        <div class="bg-purple-100 p-6 rounded-xl shadow">
-          <h3 class="text-xl font-bold text-purple-700">الكورس التمهيدي (مجاني)</h3>
-          <p class="mt-2 mb-4">مقدمة عن التكنولوجيا والبرمجة للمبتدئين.</p>
-          <ul class="list-disc pr-5 mb-4 text-sm">
-            <li>مقدمة عن التكنولوجيا الحديثة</li>
-            <li>ما هي البرمجة؟ ولماذا مهمة؟</li>
-            <li>تطبيقات البرمجة في الحياة اليومية</li>
-          </ul>
-          <a href="https://wa.me/201066047545" target="_blank" class="bg-purple-700 text-white px-4 py-2 rounded hover:bg-purple-800">راسلنا على واتساب</a>
-        </div>
-
-        <!-- أساسيات البرمجة -->
-        <div class="bg-purple-100 p-6 rounded-xl shadow">
-          <h3 class="text-xl font-bold text-purple-700">كورس الأساسيات - 120 جنيه</h3>
-          <p class="mt-2 mb-4">ابدأ من الصفر مع مفاهيم البرمجة الأساسية.</p>
-          <ul class="list-disc pr-5 mb-4 text-sm">
-            <li>مقدمة في لغات البرمجة</li>
-            <li>الجمل الشرطية والحلقات والمتغيرات</li>
-            <li>تطبيق عملي بلغة Python أو JavaScript</li>
-          </ul>
-          <a href="https://wa.me/201066047545" target="_blank" class="bg-purple-700 text-white px-4 py-2 rounded hover:bg-purple-800">اشترك الآن - فبريكا</a>
-        </div>
-
-        <!-- بناء المشاريع -->
-        <div class="bg-purple-100 p-6 rounded-xl shadow">
-          <h3 class="text-xl font-bold text-purple-700">كورس بناء المشاريع - 220 جنيه</h3>
-          <p class="mt-2 mb-4">تعلم كيفية تحويل الأكواد إلى موقع أو تطبيق.</p>
-          <ul class="list-disc pr-5 mb-4 text-sm">
-            <li>تصميم واجهات وربطها بالبرمجة</li>
-            <li>نشر المواقع باستخدام GitHub وNetlify</li>
-            <li>شرح عملي لنشر تطبيق على Google Play</li>
-          </ul>
-          <a href="https://wa.me/201066047545" target="_blank" class="bg-purple-700 text-white px-4 py-2 rounded hover:bg-purple-800">اشترك الآن - فبريكا</a>
-        </div>
-
-        <!-- كورس الاحتراف -->
-        <div class="bg-purple-100 p-6 rounded-xl shadow">
-          <h3 class="text-xl font-bold text-purple-700">كورس الاحتراف - 350 جنيه</h3>
-          <p class="mt-2 mb-4">حوّل نفسك لمبرمج محترف ينشئ مشروعه الخاص.</p>
-          <ul class="list-disc pr-5 mb-4 text-sm">
-            <li>بناء هوية رقمية وPortfolio</li>
-            <li>نشر مشروعك على الإنترنت</li>
-            <li>طرق الربح من الإنترنت والعمل الحر</li>
-          </ul>
-          <a href="https://wa.me/201066047545" target="_blank" class="bg-purple-700 text-white px-4 py-2 rounded hover:bg-purple-800">ابدأ مشروعك الآن</a>
-        </div>
+  <!-- الباقات -->
+  <section class="bg-white py-10 px-6" data-aos="fade-up">
+    <h2 class="text-2xl font-bold text-purple-700 text-center mb-8">الباقات التعليمية</h2>
+    <div class="grid md:grid-cols-2 gap-6 max-w-5xl mx-auto">
+      <div class="bg-gray-100 p-5 rounded-xl shadow-sm">
+        <h3 class="text-xl font-bold mb-2">الكورس التمهيدي - مجاني</h3>
+        <p>مقدمة عن البرمجة والتكنولوجيا بطريقة بسيطة للمبتدئين.</p>
+        <a href="https://wa.me/201066047545" class="text-purple-600 mt-2 inline-block">مراسلتنا عبر واتساب</a>
+      </div>
+      <div class="bg-gray-100 p-5 rounded-xl shadow-sm">
+        <h3 class="text-xl font-bold mb-2">أساسيات البرمجة - 120ج</h3>
+        <p>تعلم المفاهيم الأساسية في البرمجة باستخدام Python أو JavaScript.</p>
+        <a href="https://wa.me/201066047545" class="text-purple-600 mt-2 inline-block">اشترك الآن</a>
+      </div>
+      <div class="bg-gray-100 p-5 rounded-xl shadow-sm">
+        <h3 class="text-xl font-bold mb-2">كورس بناء المشاريع - 220ج</h3>
+        <p>كيفية إنشاء تطبيقات حقيقية ورفعها على GitHub وNetlify.</p>
+        <a href="https://wa.me/201066047545" class="text-purple-600 mt-2 inline-block">اشترك الآن</a>
+      </div>
+      <div class="bg-gray-100 p-5 rounded-xl shadow-sm">
+        <h3 class="text-xl font-bold mb-2">كورس الاحتراف - 350ج</h3>
+        <p>تحول إلى مبرمج محترف مع بناء مشروعك الشخصي وهوية رقمية.</p>
+        <a href="https://wa.me/201066047545" class="text-purple-600 mt-2 inline-block">ابدأ مشروعك الآن</a>
       </div>
     </div>
   </section>
 
+  <!-- تواصل معنا -->
+  <section class="py-12 px-6 bg-purple-50" data-aos="zoom-in">
+    <h2 class="text-center text-2xl font-bold text-purple-800 mb-6">تواصل معنا</h2>
+    <div class="max-w-md mx-auto">
+      <form action="mailto:fabrica@gmail.com" method="POST" enctype="text/plain" class="space-y-4">
+        <input type="text" name="name" placeholder="الاسم" class="w-full px-4 py-2 border rounded" required />
+        <input type="email" name="email" placeholder="البريد الإلكتروني" class="w-full px-4 py-2 border rounded" required />
+        <textarea name="message" placeholder="رسالتك" class="w-full px-4 py-2 border rounded h-32" required></textarea>
+        <button type="submit" class="bg-purple-600 text-white px-4 py-2 rounded hover:bg-purple-700">إرسال</button>
+      </form>
+    </div>
+  </section>
+
   <!-- Footer -->
-  <footer class="bg-gray-200 py-6 mt-10 text-center text-sm">
-    <p>© 2025 Fabrica. جميع الحقوق محفوظة.</p>
-    <div class="mt-2">
-      <a href="https://wa.me/201066047545" target="_blank" class="text-purple-600 hover:underline">تواصل معنا عبر واتساب</a>
+  <footer class="text-center text-sm py-6 text-gray-500">
+    &copy; 2025 منصة Fabrica - جميع الحقوق محفوظة.
+    <div class="mt-2 space-x-4 text-purple-600">
+      <a href="mailto:fabrica@gmail.com"><i class="fas fa-envelope"></i></a>
+      <a href="https://wa.me/201066047545"><i class="fab fa-whatsapp"></i></a>
     </div>
   </footer>
 
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>AOS.init();</script>
 </body>
 </html>

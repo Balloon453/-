@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>معرض أعمال Faraj Abdallah</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Cairo', sans-serif;
+      background: linear-gradient(to right, #3f51b5, #9c27b0);
+      color: white;
+      padding: 20px;
+    }
+
+    header {
+      text-align: center;
+      padding: 30px 0;
+      font-size: 28px;
+      font-weight: bold;
+    }
+
+    .projects {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 20px;
+      max-width: 1100px;
+      margin: auto;
+    }
+
+    .card {
+      background-color: rgba(255, 255, 255, 0.1);
+      border-radius: 12px;
+      padding: 20px;
+      transition: transform 0.3s ease;
+    }
+
+    .card:hover {
+      transform: scale(1.03);
+    }
+
+    .card h3 {
+      margin: 0;
+      color: #ffeb3b;
+    }
+
+    .card p {
+      margin: 10px 0;
+    }
+
+    .card a {
+      color: #fff;
+      text-decoration: underline;
+    }
+
+    footer {
+      text-align: center;
+      padding: 30px;
+      margin-top: 40px;
+      background: rgba(255, 255, 255, 0.1);
+    }
+  </style>
+</head>
+<body>
+
+  <header>معرض أعمال Faraj Abdallah</header>
+
+  <div class="projects">
+
+    <div class="card">
+      <h3>منصة Fabrica</h3>
+      <p>مشروع تعليمي يقدم كورسات برمجة بالعربية مع تصميم أنيق وطرق دفع متعددة.</p>
+      <a href="https://fabrica-courses.netlify.app/" target="_blank">زيارة الموقع</a>
+    </div>
+
+    <div class="card">
+      <h3>تطبيق القرآن الكريم</h3>
+      <p>تطبيق PWA يعرض سور القرآن الكريم بواجهة بسيطة ويعمل بدون إنترنت. (عرض فقط)</p>
+    </div>
+
+    <div class="card">
+      <h3>نظام إدارة محتوى</h3>
+      <p>نموذج أولي لمنصة إدارة محتوى تصلح للمدونات أو المواقع الصغيرة. (قيد التصميم)</p>
+    </div>
+
+    <div class="card">
+      <h3>أداة إنشاء مواقع شخصية</h3>
+      <p>فكرة أداة تتيح إنشاء سيرة ذاتية احترافية بسهولة عبر المتصفح. (سيتم تطويرها لاحقًا)</p>
+    </div>
+
+  </div>
+
+  <footer>
+    &copy; 2025 Faraj Abdallah - جميع الحقوق محفوظة
+  </footer>
+
+</body>
+</html>

@@ -2,45 +2,83 @@
 <html lang="ar" dir="rtl">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>جميع المقالات</title>
-  <script src="https://cdn.tailwindcss.com"></script>
-  <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;700&display=swap" rel="stylesheet" />
-  <style> body { font-family: "Cairo", sans-serif; } </style>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>مقالات تعليمية - Fabrica</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Cairo', sans-serif;
+      background: linear-gradient(to right, #3f51b5, #9c27b0);
+      color: #fff;
+    }
+
+    header {
+      text-align: center;
+      padding: 30px;
+      font-size: 26px;
+      font-weight: bold;
+    }
+
+    .articles-container {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 20px;
+      padding: 20px;
+    }
+
+    .article-card {
+      background-color: rgba(255, 255, 255, 0.1);
+      border-radius: 12px;
+      padding: 20px;
+      max-width: 600px;
+      width: 90%;
+      transition: transform 0.3s;
+    }
+
+    .article-card:hover {
+      transform: scale(1.03);
+    }
+
+    .article-card h3 {
+      margin-top: 0;
+      color: #ffeb3b;
+    }
+
+    .article-card a {
+      display: inline-block;
+      margin-top: 10px;
+      color: #fff;
+      text-decoration: underline;
+    }
+
+    footer {
+      margin-top: 40px;
+      padding: 20px;
+      text-align: center;
+      background: rgba(0, 0, 0, 0.2);
+    }
+  </style>
 </head>
-<body class="bg-white text-gray-800 min-h-screen flex flex-col">
-  <main class="max-w-4xl mx-auto px-6 py-12 flex-grow">
-    <h1 class="text-3xl font-bold text-blue-600 mb-8 text-center">جميع المقالات</h1>
-    <ul class="space-y-4">
-      <li>
-        <a href="article1.html" class="block p-4 bg-gray-100 rounded-lg hover:bg-blue-50 transition">
-          <h2 class="text-xl font-semibold text-blue-700">5 مفاهيم برمجية يجب أن تعرفها</h2>
-          <p class="text-gray-600">تعرف على المبادئ الأساسية لأي لغة برمجة.</p>
-        </a>
-      </li>
-      <li>
-        <a href="article2.html" class="block p-4 bg-gray-100 rounded-lg hover:bg-blue-50 transition">
-          <h2 class="text-xl font-semibold text-blue-700">HTML وCSS من الصفر حتى الاحتراف</h2>
-          <p class="text-gray-600">دليلك لبناء أول موقع إلكتروني احترافي.</p>
-        </a>
-      </li>
-      <li>
-        <a href="article3.html" class="block p-4 bg-gray-100 rounded-lg hover:bg-blue-50 transition">
-          <h2 class="text-xl font-semibold text-blue-700">لماذا JavaScript مهمة لكل مبرمج؟</h2>
-          <p class="text-gray-600">كيف تجعل مواقعك تفاعلية وحديثة.</p>
-        </a>
-      </li>
-    </ul>
-    <div class="mt-12 text-center">
-      <a href="index.html" class="inline-block bg-blue-600 text-white py-3 px-6 rounded-full hover:bg-blue-700 transition">
-        العودة إلى الصفحة الرئيسية
-      </a>
+<body>
+  <header>مقالات تعليمية</header>
+
+  <div class="articles-container">
+    <div class="article-card">
+      <h3>أساسيات البرمجة للمبتدئين</h3>
+      <p>مقال يشرح المفاهيم الأساسية في البرمجة بلغة بسيطة مناسبة لكل المبتدئين.</p>
+      <a href="article1.html">اقرأ المقال</a>
     </div>
-  </main>
-  <footer class="text-center py-6 text-gray-500 bg-gray-100">
-    &copy; 2025 موقعي التعليمي - جميع الحقوق محفوظة
+
+    <div class="article-card">
+      <h3>كيف تبدأ مشروعك البرمجي</h3>
+      <p>نصائح وخطوات عملية للبدء في مشروع برمجي ناجح.</p>
+      <a href="article2.html">اقرأ المقال</a>
+    </div>
+  </div>
+
+  <footer>
+    جميع الحقوق محفوظة &copy; Fabrica 2025
   </footer>
 </body>
 </html>
-<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2292540012620202"
-     crossorigin="anonymous"></script>
